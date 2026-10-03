@@ -1,0 +1,380 @@
+/* ================= ROOT ================= */
+
+:root {
+    --main-color: #168d98;
+    --dark-color: #222222;
+    --container-width: 1100px;
+}
+
+
+/* ================= RESET ================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+nav {
+    width: 100%;
+    min-height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 5%;
+
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+    width: 90px;
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    gap: 35px;
+
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+
+    font-size: 1.05rem;
+
+    padding: 32px 0;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: var(--main-color);
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    height: 650px;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.15),
+            rgba(255, 255, 255, 0.15)
+        ),
+        url("https://grahanatura.com/wp-content/uploads/2023/06/20230621_124645.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* ================= PROFILE ================= */
+.profile {
+    max-width: var(--container-width);
+    margin: auto;
+    padding: 100px 30px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.profile-text {
+    width: 50%;
+}
+.profile-text h1 {
+    color: var(--main-color);
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+}
+.profile-text p {
+    line-height: 1.8;
+    font-size: 1rem;
+}
+.read-more {
+    display: inline-block;
+    margin-top: 25px;
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+.read-more:hover {
+    text-decoration: underline;
+}
+.profile-image {
+    width: 50%;
+}
+.profile-image img {
+    width: 100%;
+    display: block;
+}
+
+
+/* ================= PRODUCT ================= */
+.product {
+    max-width: var(--container-width);
+    margin: auto;
+    padding: 80px 30px;
+}
+.product > h1 {
+    text-align: center;
+    color: var(--main-color);
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+/* RESIDENTIAL + COMMERCIAL */
+.product-container {
+    display: flex;
+    gap: 40px;
+}
+.product-item {
+    width: 50%;
+    text-align: center;
+}
+.product-image {
+    width: 100%;
+    height: 330px;
+    overflow: hidden;
+}
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.product-item h2 {
+    color: var(--main-color);
+    font-size: 1.8rem;
+    margin-top: 25px;
+}
+.product-item .read-more {
+    margin-top: 10px;
+}
+
+
+/* ================= CONTACT ================= */
+.contact {
+    background-image:
+        url("https://grahanatura.com/wp-content/uploads/2023/06/20230621_124645.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.contact-background {
+    background-color: rgba(255, 255, 255, 0.93);
+    padding: 70px 8%;
+}
+
+/* CONTACT TOP */
+.contact-top {
+    text-align: center;
+}
+.contact-top h1 {
+    color: #a8dfe3;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+.contact-person {
+    width: 350px;
+    margin: 0 auto 30px;
+    text-align: left;
+}
+.contact-person p {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.brochure-button {
+    display: inline-block;
+    background-color: var(--main-color);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 30px;
+}
+.brochure-button:hover {
+    background-color: #107680;
+}
+
+
+/* CONTACT OFFICE */
+.contact-office {
+    max-width: var(--container-width);
+    margin: 80px auto 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.office-item {
+    flex: 1;
+}
+.office-item h2 {
+    color: var(--main-color);
+    font-size: 1.55rem;
+    line-height: 1.05;
+    margin-bottom: 35px;
+}
+.office-item p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background-color: #087d85;
+    color: white;
+    min-height: 60px;
+    padding: 15px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer p {
+    font-size: 0.9rem;
+}
+.social-media {
+    display: flex;
+    gap: 25px;
+   font-size: 1.3rem;
+}
+
+
+/* ================= TABLET ================= */
+@media screen and (max-width: 768px) {
+    /* HEADER */
+    nav {
+        padding: 15px 5%;
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav ul {
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav ul li a {
+        padding: 0;
+        font-size: 0.9rem;
+    }
+    /* HERO */
+    .hero {
+        height: 550px;
+    }
+    /* PROFILE */
+    .profile {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .profile-text,
+    .profile-image {
+        width: 100%;
+    }
+    /* PRODUCT */
+    .product-container {
+        flex-direction: column;
+    }
+    .product-item {
+        width: 100%;
+    }
+    .product-image {
+        height: 350px;
+    }
+    /* CONTACT */
+    .contact-office {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .contact-person {
+        width: 100%;
+        max-width: 350px;
+    }
+    /* FOOTER */
+    footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+@media screen and (max-width: 481px) {
+    /* HEADER */
+    nav ul {
+        gap: 10px;
+    }
+    nav ul li a {
+        font-size: 0.75rem;
+    }
+    /* HERO */
+    .hero {
+        height: 500px;
+    }
+    /* PROFILE */
+    .profile {
+        padding: 70px 20px;
+    }
+    .profile-text h1 {
+        font-size: 2rem;
+    }
+    /* PRODUCT */
+    .product {
+        padding: 60px 20px;
+    }
+    .product > h1 {
+        font-size: 2rem;
+    }
+    .product-image {
+        height: 250px;
+    }
+    .product-item h2 {
+        font-size: 1.5rem;
+    }
+    /* CONTACT */
+    .contact-background {
+        padding: 60px 20px;
+    }
+    .contact-top h1 {
+        font-size: 2.2rem;
+    }
+    .contact-person p {
+        font-size: 0.85rem;
+    }
+    .office-item h2 {
+        font-size: 1.4rem;
+    }
+}
